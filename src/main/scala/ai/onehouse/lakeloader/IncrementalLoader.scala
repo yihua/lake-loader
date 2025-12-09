@@ -138,6 +138,7 @@ class IncrementalLoader(
       outputPath: String,
       format: StorageFormat = Parquet,
       operation: OperationType = OperationType.Upsert,
+      initialOperation: OperationType = OperationType.Upsert,
       apiType: ApiType = ApiType.SparkDatasourceApi,
       opts: Map[String, String] = Map(),
       cacheInput: Boolean = false,
